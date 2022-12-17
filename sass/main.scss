@@ -1,0 +1,21 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './base/modern-normalize';
+
+@import './components/common/logo';
+@import './base/body';
+@import './components/common/socials';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/service';
+@import './components/choice';
+@import './components/barbers';
+@import './components/portfolio';
+@import './components/contact-form';
+@import './components/footer';
+
+
+
