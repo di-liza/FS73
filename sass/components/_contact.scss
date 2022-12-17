@@ -1,0 +1,21 @@
+.contact {}
+
+.contact__form {}
+
+.contact__title {}
+
+.contact--box {}
+
+.contact__address {}
+
+.contact__list {
+    @extend %list;
+}
+
+.contact__item {}
+
+.contact__link {}
+
+.contact__subtitle {}
+
+.contact__date-time {}

@@ -1,0 +1,18 @@
+.barbers {}
+
+.barbers__uptitle {}
+
+.barbers__title {}
+
+.barbers__list {
+    @extend %list;
+}
+
+.barbers__item {}
+
+.barbers__image {}
+
+.barbers__subtitle {}
+
+.barbers__dscr {}
+

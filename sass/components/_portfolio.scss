@@ -1,0 +1,9 @@
+.portfolio {}
+
+.portfolio__list {
+    @extend %list;
+}
+
+.portfolio__item {}
+
+.portfolio__image {}

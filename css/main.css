@@ -1,3 +1,25 @@
+.social-link, .contact__list, .portfolio__list, .barbers__list, .choice__list, .service__list, .about__list, .header__list, .socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-link__link, .header__link, .socials__link, .logo {
+  text-decoration: none;
+  color: var(--primary-link-color);
+}
+
+.booking-button {
+  display: inline-block;
+  border: transparent;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document

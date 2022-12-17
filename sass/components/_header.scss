@@ -1,0 +1,18 @@
+.header {}
+
+.navigate {}
+
+
+.header__list {
+    @extend %list;
+}
+
+.header__item {}
+
+.header__link {
+    @extend %link;
+}
+
+.tel__link {}
+
+.booking-button {}

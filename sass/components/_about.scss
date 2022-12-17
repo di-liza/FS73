@@ -1,0 +1,15 @@
+.about {}
+.about__list {
+    @extend %list;
+}
+
+.about__item {}
+
+.about__image {}
+.about__uptitle {}
+
+.about__title {}
+
+.about__descr {}
+
+.about__text {}

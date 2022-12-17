@@ -1,0 +1,16 @@
+.service {}
+
+.service__uptitle {}
+
+.service__title {}
+
+.service__list {
+    @extend %list;
+}
+
+.service__item {}
+
+.service__text {}
+
+.service__price {}
+

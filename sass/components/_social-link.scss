@@ -1,0 +1,10 @@
+
+.social-link {
+    @extend %list;
+}
+
+.social-link__item {}
+
+.social-link__link {
+    @extend %link;
+}
