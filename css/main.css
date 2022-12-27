@@ -1,15 +1,42 @@
-.social-link, .contact__list, .portfolio__list, .barbers__list, .choice__list, .service__list, .about__list, .header__list, .socials {
+:root {
+  --accent-color: #FF6C00;
+  --primary-text-color:#555555;
+  --header-links-color: #fff;
+  --hero-soc-link-color: #303030;
+  --hero-btn-color: #303030;
+  --hero-text-color: #9DA4BD;
+  --hero-title-text-color:#FFFFFF;
+  --hero-socials-color:#303030;
+  --about-tittle-color: #303030;
+  --about-btn-tx-color:#303030;
+  --services--up-titile: #9DA4BD;
+  --services-title-text-color: #FFFFFF;
+  --services-table-color:#9DA4BD;
+  --services-btn-color:#FFFFFF;
+  --choice--prm-text-color: #303030;
+  --choice-dscr-color:#555555;
+  --barbers-prm-color: #303030;
+  --gallery-up-title-color:#303030;
+  --contacts-title-color: #fff;
+  --contacts-btn-color: #fff;
+  --contacts-sub-tit-color: #fff;
+  --contacts-text-color:#9DA4BD;
+  --footer-prm-color: #303030;
+  --footer-copyright:#9DA4BD;
+}
+
+.social-link, .contact__list, .portfolio__list, .barbers__list, .choice__list, .service__list, .about__list, .mob-menu__soc-list, .mob-menu__list, .header__list, .socials {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.social-link__link, .header__link, .socials__link, .logo {
+.social-link__link, .mob-menu__soc-link, .mob-menu__tel, .mob-menu__link, .socials__link, .logo {
   text-decoration: none;
   color: var(--primary-link-color);
 }
 
-.booking-button {
+.booking-button, .menu-close, .menu-open {
   display: inline-block;
   border: transparent;
   background-color: transparent;
@@ -281,4 +308,291 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+article {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.header-hero-bacground {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2))), url(../img/bcg-img/barber-mobile.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2)), url(../img/bcg-img/barber-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header-hero-bacground {
+    background-image: url(../img/bcg-img/barber-mobile-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-hero-bacground {
+    background-image: url(../img/bcg-img/barber-tablet.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header-hero-bacground {
+    background-image: url(../img/bcg-img/barber-tablet-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-hero-bacground {
+    background-image: url(../img/bcg-img/barber-desctop.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header-hero-bacground {
+    background-image: url(../img/bcg-img/barber-desctop-2x.jpg);
+  }
+}
+
+.logo {
+  display: block;
+  padding-top: 40px;
+  fill: #fff;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(25, 28, 38, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .navigate {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__contact {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: block;
+  overflow: auto;
+  background-color: #fff;
+  line-height: 1.3888888889;
+  letter-spacing: 0.1em;
+  color: var(--hero-socials-color);
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: initial;
+  pointer-events: none;
+}
+
+.mob-menu-wrap {
+  max-width: 337px;
+  height: 100%;
+  padding: 118px 99px 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-open {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: transparent;
+  border: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-close {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: transparent;
+  border: transparent;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-menu__link {
+  color: var(--hero-socials-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.mob-menu__tel {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.mob-menu__booking-button {
+  width: 194px;
+  height: 40px;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333333333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--hero-btn-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+  margin-top: 24px;
+  margin-bottom: 64px;
+}
+
+.mob-menu__bott-wrap {
+  margin-top: auto;
+}
+
+.mob-menu__soc-list {
+  position: relative;
+  width: 62px;
+  padding-left: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.2em;
+  color: var(--hero-soc-link-color);
+}
+.mob-menu__soc-list::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #303030;
+  top: 9px;
+  left: 0;
+}
+
+.mob-menu__soc-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.hero {
+  padding-top: 280px;
+  padding-bottom: 209px;
+  text-align: center;
+  height: 580px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 680px;
+    padding-top: 178px;
+    padding-bottom: 237px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 178px;
+    padding-bottom: 208px;
+    text-align: center;
+  }
+}
+
+.social-link {
+  position: relative;
+  width: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.2em;
+  color: var(--hero-soc-link-color);
+  margin-left: 100px;
+}
+
+.social-link__item:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #303030;
+  top: 11px;
+  left: -100px;
 }/*# sourceMappingURL=main.css.map */

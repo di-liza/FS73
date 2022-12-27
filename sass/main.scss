@@ -3,11 +3,12 @@
 @import './utils/placeholders';
 @import './base/modern-normalize';
 
+@import './components/common/body';
 @import './components/common/logo';
-@import './base/body';
 @import './components/common/socials';
 
 @import './components/header';
+@import './components/mob-menu';
 @import './components/common/booking-button';
 @import './components/hero';
 @import './components/about';
@@ -19,6 +20,7 @@
 @import './components/contact-form';
 @import './components/footer';
 @import './components/social-link';
+
 
 
 

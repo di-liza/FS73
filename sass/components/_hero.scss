@@ -1,4 +1,17 @@
-.hero {}
+.hero {
+    @include sectionSet($p-top: 280px, $p-bot: 209px);
+
+    height: 580px;
+    @include tablet{
+        height: 680px;
+        @include sectionSet($p-top: 178px, $p-bot: 237px);
+    }
+
+    @include desktop{
+        @include sectionSet($p-top: 178px, $p-bot: 208px);
+    }
+
+}
 
 .hero__uptitle {}
 

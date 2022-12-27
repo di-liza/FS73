@@ -1,18 +1,20 @@
-.header {}
-
-.navigate {}
-
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(25, 28, 38, 0.2);
+}
+.navigate {
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+.header__contact {
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
 
 .header__list {
     @extend %list;
 }
-
-.header__item {}
-
-.header__link {
-    @extend %link;
-}
-
-.tel__link {}
-
-.booking-button {}

@@ -1,9 +1,35 @@
 
 .social-link {
+    position: relative;
+    width: 62px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
     @extend %list;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(19px / 14px);
+    letter-spacing: 0.2em;
+
+    color: var(--hero-soc-link-color);
+    margin-left: 100px;
+
+    
 }
 
-.social-link__item {}
+.social-link__item {
+    &:nth-child(1)::before {
+            position: absolute;
+            content: '';
+            width: 60px;
+            height: 1px;
+            background: #303030;
+            top: 11px;
+            left: -100px;
+        }
+}
 
 .social-link__link {
     @extend %link;
