@@ -1,4 +1,19 @@
 .booking-button{
-    @extend %button;
+@extend %button;
 
+width: 160px;
+height: 40px;
+display: block;
+
+font-weight: 600;
+font-size: 12px;
+line-height: calc(16px / 12px);
+letter-spacing: 0.09em;
+text-transform: uppercase;
+
+color: #303030;
+
+border: 1px solid var(--accent-color);
+border-radius: 25px;
+background-color: transparent;
 }

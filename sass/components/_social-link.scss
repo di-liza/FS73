@@ -18,6 +18,12 @@
 
     
 }
+.social-link--disabled{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}
 
 .social-link__item {
     &:nth-child(1)::before {

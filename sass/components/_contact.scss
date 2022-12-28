@@ -1,21 +1,92 @@
-.contact {}
+.contact {
+    @include sectionSet;
+    background-color: #191C26;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../img/contacts/contacts-bacgrd-mobile.png);
+    @include retina{
+        background-image: url(../../img/contacts/contacts-bacgrd-mobile-2x.png)
+    }
+}
 
-.contact__form {}
+.contact__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49px / 42px);
+    text-align: center;
+    letter-spacing: 0.05em;
 
-.contact__title {}
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
 
-.contact--box {}
 
-.contact__address {}
+.contact__address {
+    display: inline-flex;
+        align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(30px / 18px);
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+    margin-bottom: 20px;
+}
 
 .contact__list {
     @extend %list;
+    margin-bottom: 44px;
 }
 
-.contact__item {}
+.contact__item {
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
 
-.contact__link {}
+.contact__link {
+    @extend %link;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+.contact__icon{
+    display: inline-block;
+    margin-right: 16px;
+}
+.contact__subtitle {
+    position: relative;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15px / 11px);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    &::before{
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        content: '';
+        top: 7px;
+        left: 0;
+        background-color: rgba(157, 164, 189, 0.4);
+    }
+}
 
-.contact__subtitle {}
-
-.contact__date-time {}
+.contact__date-time {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(30px / 18px);
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+// .copy-icon{
+//     display: inline-block;
+//     width: 12px;
+//     height: 12px;
+// }

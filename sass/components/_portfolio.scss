@@ -1,9 +1,40 @@
-.portfolio {}
-
+.portfolio {
+    @include sectionSet;
+}
+.portfolio__title{
+    @extend %visuality-hidden;
+}
+.portfolio__uptitle{
+    position: relative;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15px / 11px);
+    text-transform: uppercase;
+    color: #303030;
+    padding-left: 80px;
+    margin-bottom: 71px;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 1px;
+        top: 7px;
+        left: 0;
+        background-color: #303030;
+    }
+}
 .portfolio__list {
     @extend %list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.portfolio__item {}
+.portfolio__item {
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
 
 .portfolio__image {}

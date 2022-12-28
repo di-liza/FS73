@@ -1,0 +1,70 @@
+.boooking-form {
+    @include sectionSet;
+    background-color: #191C26;
+    text-align: center;
+}
+
+.container {}
+
+.boooking-form__form-wrap {}
+
+.boooking-form__fill {
+    
+}
+
+.boooking-form__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49px / 42px);
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    margin-bottom: 44px;
+}
+.boooking-form__input, .boooking-form__textarea{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15px / 11px);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+}
+.boooking-form__input {
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    margin-bottom: 44px;
+}
+
+.boooking-form__textarea {
+    width: 100%;
+    height: 76px;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    margin-bottom: 44px;
+    resize: none;
+}
+
+.boooking-form__btn {
+    width: 160px;
+    height: 40px;
+
+    background-color: transparent;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}

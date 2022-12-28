@@ -1,4 +1,29 @@
-.footer {}
+.footer {
+    @include sectionSet($p-top: 44px, $p-bot: 44px);
+    background-color: #F7F7F7;
 
-.footer__copy {}
+    .social-link {
+        width: 270px;
+        font-size: 11px;
+        line-height: calc(15px / 11px);
+        margin-bottom: 20px;
+    }
+}
+
+.footer__copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15px / 11px);
+    letter-spacing: 0.2em;
+    color: #9DA4BD;
+    padding-left: 18px;
+    // &::before{
+    //     position: absolute;
+    //     content: '\00A9';
+    //     top: 2px;
+    //     left: 0px;
+    //    width: 12px;
+    //    height: 12px;
+    // }
+}
 

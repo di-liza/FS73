@@ -1,8 +1,15 @@
 .socials {
     @extend %list;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.soacials__item {}
+.soacials__item {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
 
 .socials__link {
     @extend %link;
