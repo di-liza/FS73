@@ -28,7 +28,10 @@
     line-height: calc(15px / 11px);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.4);
+    color: #fff;
+    ::placeholder{
+        color: rgba(157, 164, 189, 0.4);
+    }
 }
 .boooking-form__input {
     width: 100%;
@@ -67,4 +70,11 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
+
+    &:hover,
+    &:focus {
+        background-color: #FF6C00;
+        ;
+        color: #fff;
+    }
 }

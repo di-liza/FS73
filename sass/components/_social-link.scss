@@ -5,7 +5,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    // gap: 24px;
 
     @extend %list;
     font-weight: 600;
@@ -15,6 +15,21 @@
 
     color: var(--hero-soc-link-color);
     margin-left: 100px;
+
+    @include mobile{
+        padding-left: 100px;
+        
+    }
+    
+        &::before {
+            position: absolute;
+            content: '';
+            width: 60px;
+            height: 1px;
+            background: #303030;
+            top: 11px;
+            left: 0;
+        }
 
     
 }
@@ -26,15 +41,7 @@
 }
 
 .social-link__item {
-    &:nth-child(1)::before {
-            position: absolute;
-            content: '';
-            width: 60px;
-            height: 1px;
-            background: #303030;
-            top: 11px;
-            left: -100px;
-        }
+   
 }
 
 .social-link__link {

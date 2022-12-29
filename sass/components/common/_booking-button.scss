@@ -16,4 +16,11 @@ color: #303030;
 border: 1px solid var(--accent-color);
 border-radius: 25px;
 background-color: transparent;
+
+&:hover,
+&:focus {
+    background-color: #FF6C00;
+    ;
+    color: #fff;
+}
 }

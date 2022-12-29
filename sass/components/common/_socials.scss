@@ -6,15 +6,22 @@
     gap: 10px;
 }
 
-.soacials__item {
+.socials__item {
     background-color: #FFFFFF;
     border-radius: 50%;
+    &:hover,
+    &:focus, &.socials-link{
+        color: #FF6C00;
+    }
 }
 
 .socials__link {
     @extend %link;
+    // &:hover, &:focus {
+    //     color: #FF6C00;
+    // }
 }
 
 .socials__icon {
- 
+ fill: currentColor;
 }

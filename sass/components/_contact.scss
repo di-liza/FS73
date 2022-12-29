@@ -44,15 +44,20 @@
     }
 }
 
-.contact__link {
-    @extend %link;
+.contact__box {
     display: inline-flex;
     align-items: center;
+}
+.contact__link{
+    @extend %link;
     font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
+    line-height: calc(30px  / 18px);
     letter-spacing: 0.02em;
     color: #9DA4BD;
+}
+.contact__link--underline{
+    text-decoration: underline;
 }
 .contact__icon{
     display: inline-block;
@@ -85,8 +90,3 @@
     letter-spacing: 0.02em;
     color: #9DA4BD;
 }
-// .copy-icon{
-//     display: inline-block;
-//     width: 12px;
-//     height: 12px;
-// }

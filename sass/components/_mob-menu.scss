@@ -120,6 +120,11 @@
     background-color: transparent;
     margin-top: 24px;
     margin-bottom: 64px;
+
+    &:hover, &:focus {
+            background-color: #FF6C00;;
+            color: #fff;
+        }
 }
 
 .mob-menu__bott-wrap{
