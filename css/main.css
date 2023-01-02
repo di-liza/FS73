@@ -978,11 +978,11 @@ address {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
-  .choice__list:not(:first-child) {
-    margin-top: 33px;
-  }
 }
-@media screen and (min-width: 480px) and (min-width: 768px) {
+.choice__list:not(:first-child) {
+  margin-top: 33px;
+}
+@media screen and (min-width: 768px) {
   .choice__list:not(:first-child) {
     margin-top: 0;
   }

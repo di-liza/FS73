@@ -64,11 +64,11 @@
     flex-basis: calc((100% - 10px) / 2);
     @include mobile{
         flex-basis: calc((100% - 30px) / 2);
-        &:not(:first-child){
-            margin-top: 33px;
-            @include tablet{
-                margin-top: 0;
-            }
+    }
+    &:not(:first-child){
+        margin-top: 33px;
+        @include tablet{
+            margin-top: 0;
         }
     }
 }
