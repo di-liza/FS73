@@ -1,9 +1,20 @@
 .boooking-form {
     @include sectionSet;
+    @include tablet {
+            @include sectionSet ($p-top: 100px, $p-bot: 100px);
+        }
     background-color: #191C26;
     text-align: center;
+    @include tablet{
+        text-align: left;
+    }
 }
-
+.boooking-form__wrap{
+    @include tablet{
+    display: flex;
+    gap: 30px;
+}
+}
 .container {}
 
 .boooking-form__form-wrap {}

@@ -48,13 +48,28 @@
 }
 .choice__list-wrap{
     display: flex;
-    gap: 30px;
+    width: 255px;
+    gap: 10px;
+    margin: 0 auto;
+    @include mobile{
+        gap: 30px;
+        width: 417px;
+    }
+    @include tablet{
+        width: 450px;
+    }
 }
 .choice__list {
     @extend %list;
-    flex-basis: calc((100% - 30px) / 2);
-    &:not(:first-child){
-        margin-top: 33px;
+    flex-basis: calc((100% - 10px) / 2);
+    @include mobile{
+        flex-basis: calc((100% - 30px) / 2);
+        &:not(:first-child){
+            margin-top: 33px;
+            @include tablet{
+                margin-top: 0;
+            }
+        }
     }
 }
 
@@ -70,30 +85,43 @@
 
 .choice__num {
     position: relative;
+    display: inline-block;
     margin-bottom: 6px;
 
+    font-size: 27px;
     font-weight: 700;
-    font-size: 42px;
     line-height: calc(57px / 42px);
     text-align: center;
     letter-spacing: 0.05em;
 
     color: #303030;
+
+    @include mobile{
+        font-size: 42px;
+    }
 }
 .choice__icon{
     position: absolute;
     top: 8px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 13px;
     line-height: calc(22px / 16px);
     text-align: center;
     color: #FF6C00;
+
+    @include mobile{
+        font-size: 16px;
+    }
 }
 .choice__dscr {
     font-weight: 600;
-    font-size: 11px;
+    font-size: 8px;
     line-height: calc(15px / 11px);
     text-align: center;
 
     color: #303030;
+
+    @include mobile{
+        font-size: 11px;
+    }
 }

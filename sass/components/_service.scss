@@ -1,5 +1,8 @@
 .service {
     @include sectionSet;
+    @include tablet {
+            @include sectionSet ($p-top: 100px, $p-bot: 100px);
+        }
     background-color: #111319;
     background-position: center;
     background-size: cover;
@@ -40,6 +43,10 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     margin-bottom: 44px;
+    @include tablet{
+        font-size: 42px;
+        line-height: calc(49px / 42px);
+    }
 }
 .servise__content-wrap{
     display: flex;
@@ -49,7 +56,7 @@
 .service__lists-wrap{
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);;
     padding: 30px 20px 30px 40px;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     width: 100%;
 }
 .service__list {
@@ -58,6 +65,10 @@
     line-height: 20px;
     letter-spacing: 0.02em;
     color: #9DA4BD;
+    @include tablet{
+        font-size: 18px;
+        line-height: calc(30px / 18px);
+    }
 
     &:not(:last-child){
         margin-bottom: 20px;

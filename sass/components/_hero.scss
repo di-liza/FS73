@@ -1,4 +1,5 @@
 .hero {
+    z-index: 15;
     @include sectionSet($p-top: 280px, $p-bot: 209px);
 
     height: 580px;
@@ -11,8 +12,18 @@
         @include sectionSet($p-top: 178px, $p-bot: 208px);
     }
 
+    .social-link{
+        flex-wrap: nowrap;
+        width: 270px;
+        gap: 40px;
+    }
 }
-
+.hero__wrap{
+   @include tablet{
+     display: flex;
+    
+   }
+}
 .hero__uptitle {
     position: relative;
     display: inline-block;

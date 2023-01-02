@@ -14,7 +14,7 @@
     letter-spacing: 0.2em;
 
     color: var(--hero-soc-link-color);
-    margin-left: 100px;
+    // margin-left: 100px;
 
     @include mobile{
         padding-left: 100px;
@@ -36,7 +36,7 @@
 .social-link--disabled{
     display: none;
     @include tablet{
-        display: block;
+        display: flex;
     }
 }
 

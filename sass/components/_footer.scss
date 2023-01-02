@@ -5,15 +5,21 @@
     .social-link {
         flex-wrap: nowrap;
         gap: 40px;
+        margin-left: auto;
         // justify-content: flex-end;
         // width: 253px;
         font-size: 11px;
         line-height: calc(15px / 11px);
-        margin-left: 120px;
-        margin-bottom: 20px;
+        padding-left: 100px;
+        // margin-left: 120px;
+        // margin-bottom: 20px;
         @include mobile{
-            margin-left: 179px;
+            // margin-left: 148px;
             
+        }
+        @include tablet{
+            // margin-left: 0;
+
         }
         
         &:nth-child(1)::before {
@@ -28,12 +34,27 @@
     }
     }
 }
+.footer__wrap{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    width: 119px;
+    @include mobile{
+        width: 280px;
+        justify-content: space-between;
+    }
+    @include tablet{
+        width: 521px;
+        flex-direction: unset;
+    }
+}
 .footer__copy {
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15px / 11px);
     letter-spacing: 0.2em;
     color: #9DA4BD;
-    padding-left: 18px;
+    display: inline-block;
+    width: 158px;
 }
 
