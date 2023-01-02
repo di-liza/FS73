@@ -90,6 +90,11 @@
     color: var(--hero-socials-color);
     font-weight: 600;
     font-size: 18px;
+
+    &:hover, 
+    &:focus{
+        color: #FF6C00;
+    }
 }
 .current {
     color: var(--accent-color);
@@ -99,6 +104,10 @@
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
+    &:hover,
+    &:focus {
+        color: #FF6C00;
+    }
 }
 
 
@@ -163,4 +172,8 @@
 
 .mob-menu__soc-link {
     @extend %link;
+    &:hover,
+    &:focus {
+        color: #FF6C00;
+    }
 }

@@ -539,6 +539,9 @@ address {
   font-weight: 600;
   font-size: 18px;
 }
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: #FF6C00;
+}
 
 .current {
   color: var(--accent-color);
@@ -548,6 +551,9 @@ address {
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
+}
+.mob-menu__tel:hover, .mob-menu__tel:focus {
+  color: #FF6C00;
 }
 
 .mob-menu__booking-button {
@@ -597,6 +603,10 @@ address {
 
 .mob-menu__soc-item:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.mob-menu__soc-link:hover, .mob-menu__soc-link:focus {
+  color: #FF6C00;
 }
 
 .booking-button {
@@ -887,6 +897,7 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
 }
 .service__item:not(:last-child) {
   margin-bottom: 20px;
@@ -1554,4 +1565,8 @@ address {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.social-link__link:hover, .social-link__link:focus {
+  color: #FF6C00;
 }/*# sourceMappingURL=main.css.map */

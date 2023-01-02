@@ -31,7 +31,7 @@
             left: 0;
         }
 
-    
+        
 }
 .social-link--disabled{
     display: none;
@@ -46,4 +46,8 @@
 
 .social-link__link {
     @extend %link;
+    &:hover,
+    &:focus {
+        color: #FF6C00;
+    }
 }
