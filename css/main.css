@@ -757,11 +757,15 @@ address {
 
 .about__title {
   margin-bottom: 20px;
-  width: 306px;
   font-size: 28px;
   line-height: 1.1785714286;
   letter-spacing: 0.05em;
   color: #303030;
+}
+@media screen and (min-width: 480px) {
+  .about__title {
+    width: 306px;
+  }
 }
 
 .about__descr {
