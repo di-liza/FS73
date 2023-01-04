@@ -1,8 +1,11 @@
 .contact {
     @include sectionSet;
     @include tablet {
-            @include sectionSet ($p-top: 100px, $p-bot: 100px);
-        }
+        @include sectionSet ($p-top: 100px, $p-bot: 100px);
+    }
+    @include desktop {
+        @include sectionSet ($p-top: 120px, $p-bot: 120px);
+    }
     background-color: #191C26;;
     background-size: cover;
     background-position: center;
@@ -11,12 +14,20 @@
     @include retina{
         background-image: url(../../img/contacts/contacts-bacgrd-mobile-2x.png)
     }
+    @include desktop{
+        background: none;
+        padding-left: 100px;
+        padding: 0 0 0 100px;
+    }
 }
 .contact__wrap{
     @include tablet{
         display: flex;
         gap: 30px;
         align-items: center;
+    }
+    @include desktop{
+        flex-wrap: wrap;
     }
 }
 .contact__adress-wrap{
@@ -27,6 +38,7 @@
     }
 }
 .contact__adress{
+    @extend %link;
     @include tablet{
         width: 199px;
     }

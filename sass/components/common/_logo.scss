@@ -1,6 +1,8 @@
 .logo {
     @extend %link;
     display: block;
-    padding-top: 40px;
     fill: #fff;
+    @include tablet{
+        fill: #303030;
+    }
 }

@@ -1,6 +1,7 @@
 
 body {
     color: #303030;
+    // padding-top: 25px;
     // padding-top: 94px;
     // position: relative;
 }
@@ -39,29 +40,7 @@ address{
     overflow: hidden;
 }
 .header-hero-bacground{
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2)), url(../img/bcg-img/barber-mobile.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    @include retina {
-            background-image: url(../img/bcg-img/barber-mobile-2x.jpg);
-        }
     
-        @include tablet {
-            background-image: url(../img/bcg-img/barber-tablet.jpg);
-        }
-    
-        @include retina {
-            background-image: url(../img/bcg-img/barber-tablet-2x.jpg);
-        }
-    
-        @include desktop {
-            background-image: url(../img/bcg-img/barber-desctop.jpg);
-        }
-    
-        @include retina {
-            background-image: url(../img/bcg-img/barber-desctop-2x.jpg);
-        }
 }
 // .bacground-slider{
 //     background-color: #111319;

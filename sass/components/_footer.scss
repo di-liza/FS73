@@ -47,6 +47,9 @@
         width: 521px;
         flex-direction: unset;
     }
+    @include desktop{
+        width: 1000px;
+    }
 }
 .footer__copy {
     font-weight: 600;

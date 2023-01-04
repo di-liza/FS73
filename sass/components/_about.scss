@@ -1,8 +1,11 @@
 .about {
     @include sectionSet($p-top: 84px, $p-bot: 84px);
     @include tablet {
-            @include sectionSet ($p-top: 100px, $p-bot: 100px);
-        }
+        @include sectionSet ($p-top: 100px, $p-bot: 100px);
+    }
+    @include desktop {
+        @include sectionSet ($p-top: 120px, $p-bot: 120px);
+    }
 }
 .about__wrap{
     display: flex;
@@ -19,16 +22,33 @@
     @include tablet{
         display: block;
     }
+    @include desktop{
+        display: flex;
+        gap: 30px;
+    }
 }
 
 .about__item {
     &:not(:last-child){
         margin-bottom: 30px;
+        @include desktop{
+            margin-bottom: 0;
+        }
     }
 }
 
-.about__image {}
-
+.about__img-one{
+    height: 251px;
+    @include desktop{
+        height: 482px;
+    }
+}
+.about__img-two{
+    height: 251px;
+    @include desktop{
+        height: 482px;
+    }
+}
 .about__uptitle {
     position: relative;
     margin-bottom: 20px;
@@ -60,6 +80,10 @@
     @include mobile{
         width: 306px;
     }
+    @include desktop{
+        font-size: 42px;
+        width: 470px;
+    }
 }
 
 .about__descr {
@@ -68,9 +92,17 @@
     line-height: calc(26px / 16px);
     letter-spacing: 0.02em;
     color: #555555;
+    @include mobile{
+        width: 400px;
+    }
     @include tablet{
         font-size: 18px;
         line-height: calc(30px / 18px);
+        width: 330px;
+    }
+    @include desktop{
+        font-size: 18px;
+        width: 470px;
     }
 }
 
@@ -80,7 +112,14 @@
     line-height: calc(26px / 14px);
     letter-spacing: 0.02em;
     color: #555555;
+    @include mobile {
+        width: 400px;
+    }
     @include tablet{
         margin-bottom: 77px;
+        width: 330px;
+    }
+    @include desktop{
+        width: 470px;
     }
 }

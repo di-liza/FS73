@@ -2,13 +2,19 @@
     @include sectionSet;
     background-color: #F7F7F7;
     @include tablet {
-            @include sectionSet ($p-top: 100px, $p-bot: 100px);
-        }
+        @include sectionSet ($p-top: 100px, $p-bot: 100px);
+    }
+    @include desktop {
+        @include sectionSet ($p-top: 120px, $p-bot: 120px);
+    }
 }
 .barbers__wrap{
     @include tablet{
         width: 450px;
         margin: 0 auto;
+    }
+    @include desktop{
+        width: 100%;
     }
 }
 .barbers__uptitle {
@@ -41,6 +47,10 @@
 
 .barbers__list {
     @extend %list;
+    @include desktop{
+        display: flex;
+        gap: 30px;
+    }
 }
 
 .barbers__item {

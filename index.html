@@ -25,7 +25,7 @@
   <body>
     <div class="header-hero-bacground">
       <header class="header">
-        <div class="container">
+        <div class="container header__wrap">
           <a class="logo" href="./index.html">
             <svg width="69" height="55">
               <use href="./img/icons.svg#logo"></use>
@@ -105,7 +105,8 @@
           </div>
         </div>
       </header>
-
+    </div>
+    <main>
       <section class="hero">
         <div class="container hero__wrap">
           <ul class="social-link social-link--disabled">
@@ -116,7 +117,7 @@
               <a href="" class="social-link__link">Youtube</a>
             </li>
           </ul>
-          <div>
+          <div class="hero__wrap-content">
             <p class="hero__uptitle">A hair salon for men in Kyiv</p>
             <h1 class="hero__title">BarberShop</h1>
             <p class="hero__descr">
@@ -126,8 +127,6 @@
           </div>
         </div>
       </section>
-    </div>
-    <main>
       <section class="about">
         <div class="container">
           <div class="about__wrap">
@@ -149,6 +148,7 @@
                     media="(min-width: 1200px)"
                   />
                   <img
+                    class="about__img-one"
                     src="./img/about/about-first-img-tablet.jpg"
                     alt="barber applies shaving cream to the client's neck"
                     height="445"
@@ -172,6 +172,7 @@
                     media="(min-width: 1200px)"
                   />
                   <img
+                    class="about__img-two"
                     src="./img/about/about-second-img-tablet.jpg"
                     alt="the barber shaves the client's head"
                     height="445"
@@ -633,84 +634,91 @@
           </ul>
         </div>
       </section>
-      <section class="boooking-form">
-        <div class="container">
-          <div class="boooking-form__form-wrap">
-            <form class="boooking-form__fill">
-              <p class="boooking-form__title">Online-booking</p>
-              <div class="boooking-form__wrap">
-                <input
-                  class="boooking-form__input"
-                  type="text"
-                  placeholder="Name*"
-                />
-                <input
-                  class="boooking-form__input"
-                  type="tel"
-                  placeholder="Phone*"
-                />
+      <div class="bottom-bacground-box">
+        <div class="contact-from__wrap container">
+          <section class="boooking-form">
+            <div class="container">
+              <div class="boooking-form__form-wrap">
+                <form class="boooking-form__fill">
+                  <p class="boooking-form__title">Online-booking</p>
+                  <div class="boooking-form__wrap">
+                    <input
+                      class="boooking-form__input"
+                      type="text"
+                      placeholder="Name*"
+                    />
+                    <input
+                      class="boooking-form__input"
+                      type="tel"
+                      placeholder="Phone*"
+                    />
+                  </div>
+                  <textarea
+                    class="boooking-form__textarea"
+                    name="comment"
+                    id="comment"
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                  ></textarea>
+                  <button class="boooking-form__btn" type="submit">send</button>
+                </form>
               </div>
-              <textarea
-                class="boooking-form__textarea"
-                name="comment"
-                id="comment"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-              ></textarea>
-              <button class="boooking-form__btn" type="submit">send</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="container">
-          <div class="contact__wrap">
-            <div class="contact__adress-wrap">
-              <p class="contact__title">Contacts</p>
-              <address class="contact__address">
-                <svg class="contact__icon" width="24" height="24">
-                  <use href="./img/icons.svg#map-pin"></use>
-                </svg>
-                <span class="contact__adress"
-                  >st. Vasilkovaya, 7A Kiev, 08132</span
-                >
-              </address>
-              <ul class="contact__list">
-                <li class="contact__item">
-                  <span class="contact__box">
+            </div>
+          </section>
+          <section class="contact">
+            <div class="container">
+              <div class="contact__wrap">
+                <div class="contact__adress-wrap">
+                  <p class="contact__title">Contacts</p>
+                  <address class="contact__address">
                     <svg class="contact__icon" width="24" height="24">
-                      <use href="./img/icons.svg#phone"></use>
+                      <use href="./img/icons.svg#map-pin"></use>
                     </svg>
-                    <a class="contact__link" href="tel:380441111111"
-                      >+38 044 111 11 11</a
-                    >
-                  </span>
-                </li>
-                <li class="contact__item">
-                  <span class="contact__box">
-                    <svg class="contact__icon" width="24" height="24">
-                      <use href="./img/icons.svg#mail"></use>
-                    </svg>
+
                     <a
-                      class="contact__link contact__link--underline"
-                      href="mailto:barbershop@email.com"
+                      href="https://www.google.com.ua/maps/search/st.+Vasilkovaya,+7A+Kiev,+08132/@50.3811223,30.3340526,13z/data=!3m1!4b1?hl=ru"
+                      class="contact__adress"
+                      >st. Vasilkovaya, 7A Kiev, 08132</a
                     >
-                      barbershop@email.com
-                    </a></span
+                  </address>
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <span class="contact__box">
+                        <svg class="contact__icon" width="24" height="24">
+                          <use href="./img/icons.svg#phone"></use>
+                        </svg>
+                        <a class="contact__link" href="tel:380441111111"
+                          >+38 044 111 11 11</a
+                        >
+                      </span>
+                    </li>
+                    <li class="contact__item">
+                      <span class="contact__box">
+                        <svg class="contact__icon" width="24" height="24">
+                          <use href="./img/icons.svg#mail"></use>
+                        </svg>
+                        <a
+                          class="contact__link contact__link--underline"
+                          href="mailto:barbershop@email.com"
+                        >
+                          barbershop@email.com
+                        </a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="contact__subtitle">Working hours</p>
+                  <span class="contact__date-time"
+                    >Every day from 9:00 to 22:00</span
                   >
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-            <div>
-              <p class="contact__subtitle">Working hours</p>
-              <span class="contact__date-time"
-                >Every day from 9:00 to 22:00</span
-              >
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">

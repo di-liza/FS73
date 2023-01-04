@@ -2,21 +2,86 @@
     position: fixed;
     width: 100%;
     z-index: 100;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include tablet{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
     background-color: rgba(25, 28, 38, 0.2);
 }
+.header__wrap{
+    display: flex;
+    align-items: center;
+}
 .navigate {
-    @media screen and (max-width:768px) {
-        display: none;
+    display: none;
+    margin-left: 70px;
+    @include tablet{
+        display: block;
     }
+    @include desktop{
+    margin-left: 130px; 
+}
 }
 .header__contact {
-    @media screen and (max-width:768px) {
-        display: none;
+    display: none;
+    
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16px / 12px);
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @include tablet{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    @include desktop{
+        flex-direction: unset;
+        align-items: center;
+    }
+    .booking-button{
+        color: #FFFFFF;
     }
 }
-
+.tel__link{
+    @extend %link;
+    &:hover,
+    &:focus{
+        color: #FF6C00;
+    }
+}
 .header__list {
     @extend %list;
+    display: flex;
+    gap: 16px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16px / 12px);
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+
+    @include desktop{
+        gap: 30px;
+    }
+}
+.header__link{
+    @extend %link;
+    display: inline-block;
+    padding-top: 12px;
+    &:hover,
+    &:focus{
+        color: #FF6C00;
+    }
+    @include desktop{
+        padding-top: 0;
+    }
 }
 .booking-button{
     width: 194px;

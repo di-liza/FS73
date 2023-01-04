@@ -1,27 +1,87 @@
 .hero {
     z-index: 15;
-    @include sectionSet($p-top: 280px, $p-bot: 209px);
-
-    height: 580px;
-    @include tablet{
-        height: 680px;
-        @include sectionSet($p-top: 178px, $p-bot: 237px);
-    }
-
-    @include desktop{
-        @include sectionSet($p-top: 178px, $p-bot: 208px);
-    }
-
     .social-link{
+        width: 90px;
         flex-wrap: nowrap;
-        width: 270px;
+        align-items: center;
         gap: 40px;
+        writing-mode: vertical-rl; 
+        transform: rotate(-180deg);
+        padding: 100px 0 0 0 ;
+        &::before{
+            display: none;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 44px;
+            background-color: #303030;
+            height: 60px;
+            width: 1px;
+            @include desktop{
+                left: 64px;
+            }
+        }
+        @include desktop{
+            width: 155px;
+            padding: 150px 0 0 0;
+        }
     }
+}
+.hero__wrap-content{
+    @include sectionSet($p-top: 208px, $p-bot: 209px);
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 5px;
+    @include mobile{
+        padding-left: 31px;
+        padding-right: 113px;
+    }
+    @include tablet { 
+        @include sectionSet($p-top: 272px, $p-bot: 237px);
+        height: 680px;
+        width: 570px;
+        margin-left: auto;
+        padding-left: 90px;
+        padding-right: 120px;
+    }
+    @include desktop { 
+        @include sectionSet($p-top: 178px, $p-bot: 208px);
+        width: 100%;
+        padding-top: 272px;
+    }
+        
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2)),
+            url(../img/bcg-img/barber-mobile.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        
+            @include retina {
+                background-image: url(../img/bcg-img/barber-mobile-2x.jpg);
+            }
+        
+            @include tablet {
+                background-image: url(../img/bcg-img/barber-tablet.jpg);
+            }
+        
+            @include retina {
+                background-image: url(../img/bcg-img/barber-tablet-2x.jpg);
+            }
+        
+            @include desktop {
+                background-image: url(../img/bcg-img/barber-desctop.jpg);
+            }
+        
+            @include retina {
+                background-image: url(../img/bcg-img/barber-desctop-2x.jpg);
+            }
+    
 }
 .hero__wrap{
    @include tablet{
      display: flex;
-    
    }
 }
 .hero__uptitle {
@@ -57,10 +117,22 @@
     letter-spacing: 0.05em;
 
     color: #FFFFFF;
+
+    @include desktop{
+    font-size: 72px;
+    line-height: calc(85px / 72px);
+    }
 }
 
 .hero__descr {
+    font-size: 16px;
     line-height: calc(26px / 16px);
     letter-spacing: 0.02em;
     color: #9DA4BD;
+    @include tablet{
+        font-size: 18px;
+    }
+    @include desktop{
+        width: 340px;
+    }
 }

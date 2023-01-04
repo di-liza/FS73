@@ -1,7 +1,10 @@
 .portfolio {
     @include sectionSet;
     @include tablet{
-        @include sectionSet ($p-top: 100px, $p-bot: 10px);
+        @include sectionSet ($p-top: 100px, $p-bot: 100px);
+    }
+    @include desktop {
+        @include sectionSet ($p-top: 120px, $p-bot: 120px);
     }
 }
 .portfolio__title{
@@ -43,6 +46,9 @@
         align-items: baseline;
        
     }
+    @include desktop {
+        width: 1170px;
+    }
 }
 
 .portfolio__item {
@@ -54,6 +60,9 @@
     }
     @include tablet{
         flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desktop{
+        flex-basis: calc((100% - 90px) / 4);
     }
 }
 

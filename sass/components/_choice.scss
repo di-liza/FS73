@@ -1,7 +1,18 @@
 .choice {
     @include sectionSet;
+    @include tablet {
+        @include sectionSet ($p-top: 100px, $p-bot: 100px);
+    }
+    @include desktop {
+        @include sectionSet ($p-top: 120px, $p-bot: 120px);
+    }
 }
-
+.choice__wrap{
+    @include desktop{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
 .choice__uptitle {
     position: relative;
     font-weight: 600;
@@ -33,6 +44,9 @@
     @include mobile{
         width: 418px;
     }
+    @include tablet {
+        width: 440px;
+    }
 }
 
 .choice__text {
@@ -45,6 +59,9 @@
     @include mobile {
             width: 375px;
         }
+    @include tablet{
+        width: 500px;
+    }
 }
 .choice__list-wrap{
     display: flex;
@@ -58,6 +75,10 @@
     @include tablet{
         width: 450px;
     }
+    @include desktop{
+        width: 370px;
+        margin: 0 130px 0 0; 
+    }
 }
 .choice__list {
     @extend %list;
@@ -67,9 +88,6 @@
     }
     &:not(:first-child){
         margin-top: 33px;
-        @include tablet{
-            margin-top: 0;
-        }
     }
 }
 
