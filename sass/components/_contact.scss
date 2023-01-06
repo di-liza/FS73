@@ -11,7 +11,7 @@
         padding: 0 0 0 100px;
         width: 366px;
     }
-    background-color: #191C26;;
+    background-color: #191C26;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,14 +24,6 @@
         background-image: url(../images/contacts/contact-bac-tab-1x.png);
         @include retina {
             background-image: url(../images/contacts/contact-bac-tab-2x.png);
-        }
-    }
-
-
-    @include desktop {
-        background-image: url(../images/contacts/contact-bac-desk-1x.png);
-        @include retina {
-            background-image: url(../images/contacts/contact-bac-desk-2x.png);
         }
     }
 

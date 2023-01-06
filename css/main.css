@@ -1,28 +1,8 @@
 :root {
   --accent-color: #FF6C00;
-  --primary-text-color:#555555;
-  --header-links-color: #fff;
-  --hero-soc-link-color: #303030;
-  --hero-btn-color: #303030;
-  --hero-text-color: #9DA4BD;
-  --hero-title-text-color:#FFFFFF;
-  --hero-socials-color:#303030;
-  --about-tittle-color: #303030;
-  --about-btn-tx-color:#303030;
-  --services--up-titile: #9DA4BD;
-  --services-title-text-color: #FFFFFF;
-  --services-table-color:#9DA4BD;
-  --services-btn-color:#FFFFFF;
-  --choice--prm-text-color: #303030;
-  --choice-dscr-color:#555555;
-  --barbers-prm-color: #303030;
-  --gallery-up-title-color:#303030;
-  --contacts-title-color: #fff;
-  --contacts-btn-color: #fff;
-  --contacts-sub-tit-color: #fff;
-  --contacts-text-color:#9DA4BD;
-  --footer-prm-color: #303030;
-  --footer-copyright:#9DA4BD;
+  --primary-color:#303030;
+  --additional-color: #555555;
+  --primary-light-color: #fff;
 }
 
 .social-link, .contact__list, .portfolio__list, .barbers__list, .choice__list, .service__list, .about__list, .mob-menu__soc-list, .mob-menu__list, .header__list, .socials {
@@ -1847,16 +1827,6 @@ address {
     background-image: url(../images/contacts/contact-bac-tab-2x.png);
   }
 }
-@media screen and (min-width: 1200px) {
-  .contact {
-    background-image: url(../images/contacts/contact-bac-desk-1x.png);
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .contact {
-    background-image: url(../images/contacts/contact-bac-desk-2x.png);
-  }
-}
 
 @media screen and (min-width: 768px) {
   .contact__wrap {
@@ -1985,11 +1955,18 @@ address {
 @media screen and (min-width: 1200px) {
   .bottom-bacground-box {
     width: 100%;
-    background-image: url(../../img/Bg.png), -webkit-gradient(linear, left top, left bottom, from(#191C26));
-    background-image: url(../../img/Bg.png), linear-gradient(#191C26);
+    background-color: #191C26;
+    background-image: url(../images/contacts/contact-bac-desk-1x.png), -webkit-gradient(linear, left top, left bottom, from(#191C26));
+    background-image: url(../images/contacts/contact-bac-desk-1x.png), linear-gradient(#191C26);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50.8% 100%, 100%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .bottom-bacground-box {
+    background-image: url(../images/contacts/contact-bac-desk-2x.png), -webkit-gradient(linear, left top, left bottom, from(#191C26));
+    background-image: url(../images/contacts/contact-bac-desk-2x.png), linear-gradient(#191C26);
   }
 }
 

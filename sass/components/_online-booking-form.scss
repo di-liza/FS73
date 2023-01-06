@@ -2,10 +2,15 @@
     @include desktop{
         width: 100%;
         // background: linear-gradient(#191C26);
-        background-image:  url(../../img/Bg.png), linear-gradient(#191C26),;
+        background-color: #191C26;
+        background-image: url(../images/contacts/contact-bac-desk-1x.png), linear-gradient(#191C26);
+        @include retina {
+                background-image: url(../images/contacts/contact-bac-desk-2x.png), linear-gradient(#191C26);
+            }
         background-repeat: no-repeat;
         background-position: right;
         background-size: 50.8% 100%, 100%;
+       
     }
 }
 
