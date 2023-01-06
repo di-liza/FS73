@@ -46,8 +46,10 @@
 
 .social-link__link {
     @extend %link;
+    transition: 250ms linear;
     &:hover,
     &:focus {
         color: #FF6C00;
+        transform: transition;
     }
 }

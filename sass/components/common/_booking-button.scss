@@ -16,11 +16,11 @@ color: #303030;
 border: 1px solid var(--accent-color);
 border-radius: 25px;
 background-color: transparent;
-
+transition: 250ms linear;
 &:hover,
 &:focus {
     background-color: #FF6C00;
-    ;
+    transform: transition;
     color: #fff;
 }
 }

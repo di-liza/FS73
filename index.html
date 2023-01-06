@@ -8,6 +8,13 @@
     <title>Barbershop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
@@ -20,94 +27,98 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="header-hero-bacground">
-      <header class="header">
-        <div class="container header__wrap">
-          <a class="logo" href="./index.html">
-            <svg width="69" height="55">
-              <use href="./img/icons.svg#logo"></use>
-            </svg>
-          </a>
-          <nav class="navigate">
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__link" href="">About</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="">Services and prices</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="">Barbers</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__contact">
-            <a class="tel__link" href="tel:380441111111">+38 044 111 11 11</a>
-            <button class="booking-button" type="button">Online-booking</button>
-          </div>
+    <header class="header">
+      <div class="container header__wrap">
+        <a class="logo" href="./index.html">
+          <svg width="69" height="55">
+            <use href="./img/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="navigate">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="">Services and prices</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="">Barbers</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact">
+          <a class="tel__link" href="tel:380441111111">+38 044 111 11 11</a>
+          <button class="booking-button" type="button">Online-booking</button>
+        </div>
 
-          <!-- MOB-MENU -->
-          <button type="button" class="menu-open" data-menu-open>
-            <svg width="40" height="40">
-              <use href="./img/icons.svg#menu"></use>
-            </svg>
-          </button>
+        <!-- MOB-MENU -->
+        <button type="button" class="menu-open" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./img/icons.svg#menu"></use>
+          </svg>
+        </button>
 
-          <div class="mob-menu is-hidden" data-menu>
-            <div class="mob-menu-wrap">
-              <div>
-                <button type="button" class="menu-close" data-menu-close>
-                  <svg width="40" height="40">
-                    <use href="./img/icons.svg#close"></use>
-                  </svg>
-                </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="mob-menu-wrap">
+            <div>
+              <button type="button" class="menu-close" data-menu-close>
+                <svg width="40" height="40">
+                  <use href="./img/icons.svg#close"></use>
+                </svg>
+              </button>
 
-                <ul class="mob-menu__list">
-                  <li class="mob-menu__item">
-                    <a class="mob-menu__link current" href="">About</a>
-                  </li>
-                  <li class="mob-menu__item">
-                    <a class="mob-menu__link" href="">Services and prices</a>
-                  </li>
-                  <li class="mob-menu__item">
-                    <a class="mob-menu__link" href="">Barbers</a>
-                  </li>
-                  <li class="mob-menu__item">
-                    <a class="mob-menu__link" href="">Contacts</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="mob-menu__list">
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link current" href="">About</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link" href="">Services and prices</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link" href="">Barbers</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link" href="">Contacts</a>
+                </li>
+              </ul>
+            </div>
 
-              <div class="mob-menu__bott-wrap">
-                <a class="mob-menu__tel" href="tel:380441111111"
-                  >+38 044 111 11 11</a
-                >
-                <button class="mob-menu__booking-button" type="button">
-                  Online-booking
-                </button>
+            <div class="mob-menu__bott-wrap">
+              <a class="mob-menu__tel" href="tel:380441111111"
+                >+38 044 111 11 11</a
+              >
+              <button class="mob-menu__booking-button" type="button">
+                Online-booking
+              </button>
 
-                <ul class="mob-menu__soc-list">
-                  <li class="mob-menu__soc-item">
-                    <a href="" class="mob-menu__soc-link">Instagram</a>
-                  </li>
-                  <li class="mob-menu__soc-item">
-                    <a href="" class="mob-menu__soc-link">Youtube</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="mob-menu__soc-list">
+                <li class="mob-menu__soc-item">
+                  <a href="" class="mob-menu__soc-link">Instagram</a>
+                </li>
+                <li class="mob-menu__soc-item">
+                  <a href="" class="mob-menu__soc-link">Youtube</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
+        <div class="background-slides background-slides--desibled">
+          <div class="slide-1"></div>
+          <div class="slide-2"></div>
+          <div class="slide-3"></div>
+        </div>
         <div class="container hero__wrap">
           <ul class="social-link social-link--disabled">
             <li class="social-link__item">
@@ -118,12 +129,21 @@
             </li>
           </ul>
           <div class="hero__wrap-content">
+            <div class="background-slides background-slides--anabled">
+              <div class="slide-1"></div>
+              <div class="slide-2"></div>
+              <div class="slide-3"></div>
+            </div>
             <p class="hero__uptitle">A hair salon for men in Kyiv</p>
             <h1 class="hero__title">BarberShop</h1>
             <p class="hero__descr">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
+            <div class="slick-btn-wrap">
+              <button type="button" class="prev slick-btn">Back</button>
+              <button type="button" class="next slick-btn">Forward</button>
+            </div>
           </div>
         </div>
       </section>
@@ -635,7 +655,7 @@
         </div>
       </section>
       <div class="bottom-bacground-box">
-        <div class="contact-from__wrap container">
+        <div class="contact-from__wrap">
           <section class="boooking-form">
             <div class="container">
               <div class="boooking-form__form-wrap">
@@ -735,7 +755,47 @@
         </div>
       </div>
     </footer>
-
+    <!-- <div class="test">
+      <div class="slide-1">
+        1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        eveniet velit sapiente quae inventore quia, at numquam placeat.
+        Consequuntur, doloribus animi laborum atque deserunt ut deleniti
+        reprehenderit tempore facere impedit nihil totam cum placeat, non nam
+        eum vitae in? Iure minima, adipisci ad ex aliquid ipsum voluptatum
+        voluptatem tenetur repudiandae!
+      </div>
+      <div class="slide-2">
+        2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eaque
+        illum rem non veritatis placeat ab consectetur est fugiat unde? Eaque
+        molestiae, tempora inventore veritatis, voluptatum laborum at recusandae
+        corporis omnis dolores eveniet distinctio debitis, itaque perferendis
+        ad! Beatae nisi vel eum repellat tempore quisquam optio recusandae
+        voluptatem! Tempora, fugit?
+      </div>
+      <div class="slide-3">
+        3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
+        itaque ipsam quaerat praesentium molestias pariatur autem veniam, ipsa
+        distinctio optio maxime ducimus tempore qui nesciunt atque deserunt quos
+        perspiciatis alias obcaecati illum? Illo, delectus, fugiat repellendus
+        ipsam eum iusto beatae corrupti minus iure recusandae sequi
+        consequuntur. Eum vero et excepturi?
+      </div>
+    </div> -->
     <script src="./js/mob-menu.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./js/slider.js"></script>
   </body>
 </html>

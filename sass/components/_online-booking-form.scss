@@ -1,7 +1,11 @@
 .bottom-bacground-box{
     @include desktop{
         width: 100%;
-        background: linear-gradient(#191C26);
+        // background: linear-gradient(#191C26);
+        background-image:  url(../../img/Bg.png), linear-gradient(#191C26),;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 50.8% 100%, 100%;
     }
 }
 
@@ -13,6 +17,12 @@
         // padding-left: 215px;
         // padding-right: 432px;
         @include sectionSet ($p-top: 120px, $p-bot: 120px);
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+    
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .boooking-form {
@@ -28,7 +38,7 @@
     @include desktop{
         background: none;
         width: 570px;
-        padding: 0;
+        padding: 0 30px 0 0;
     }
 }
 .boooking-form__wrap{
@@ -66,8 +76,19 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
+    transition: 250ms linear;
+    &:hover,
+    &:focus{
+        outline: transparent;
+        border-bottom: 1px solid #fff;
+        transform: transition;
+    }
     ::placeholder{
         color: rgba(157, 164, 189, 0.4);
+    }
+    &:hover,
+    &:focus::-webkit-input-placeholder {
+        color: #fff;
     }
 }
 .boooking-form__input {
@@ -109,9 +130,14 @@
 
     color: #FFFFFF;
 
+    transition: 250ms linear;
+
     &:hover,
     &:focus {
         background-color: #FF6C00;
         color: #fff;
+        transform: transition;
     }
+    // &:active{
+    // }
 }
