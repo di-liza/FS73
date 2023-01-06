@@ -25,15 +25,21 @@
     @include desktop{
         display: flex;
         gap: 30px;
+        width: 570px;
     }
 }
 
 .about__item {
+    height: 235px;
     &:not(:last-child){
         margin-bottom: 30px;
         @include desktop{
             margin-bottom: 0;
         }
+    }
+    @include desktop{
+        height: 445px;
+        flex-basis: calc((100% - 30px) / 2);
     }
 }
 

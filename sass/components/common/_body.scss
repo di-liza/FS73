@@ -83,19 +83,19 @@ address{
 
     @include tablet {
         background-image: url(../../../images/backgrounds/tab/background-tab-1-1x.jpg);
-    }
-
-    @include retina {
-        background-image: url(../../../images/backgrounds/tab/background-tab-1-2x.jpg);
+        
+            @include retina {
+                background-image: url(../../../images/backgrounds/tab/background-tab-1-2x.jpg);
+            }
     }
 
     @include desktop {
         background-image: url(../../../images/backgrounds/desk/background-desk-1-1x.jpg);
+        @include retina {
+            background-image: url(../../../images/backgrounds/desk/background-desk-1-2x.jpg);
+        }
     }
 
-    @include retina {
-        background-image: url(../../../images/backgrounds/desk/background-desk-1-2x.jpg);
-    }
 
 
 }
@@ -117,19 +117,19 @@ address{
 
     @include tablet {
         background-image: url(../../../images/backgrounds/tab/background-tab-2-1x.jpg);
+        @include retina {
+            background-image: url(../../../images/backgrounds/tab/background-tab-2-2x.jpg);
+        }
     }
 
-    @include retina {
-        background-image: url(../../../images/backgrounds/tab/background-tab-2-2x.jpg);
-    }
 
     @include desktop {
         background-image: url(../../../images/backgrounds/desk/background-desk-2-1x.jpg);
+        @include retina {
+            background-image: url(../../../images/backgrounds/desk/background-desk-2-2x.jpg);
+        }
     }
 
-    @include retina {
-        background-image: url(../../../images/backgrounds/desk/background-desk-2-2x.jpg);
-    }
 
 
 }
@@ -152,19 +152,19 @@ address{
 
     @include tablet {
         background-image: url(../../../images/backgrounds/tab/background-tab-3-1x.jpg);
+        @include retina {
+            background-image: url(../../../images/backgrounds/tab/background-tab-3-2x.jpg);
+        }
     }
 
-    @include retina {
-        background-image: url(../../../images/backgrounds/tab/background-tab-3-2x.jpg);
-    }
 
     @include desktop {
         background-image: url(../../../images/backgrounds/desk/background-desk-3-1x.jpg);
+        @include retina {
+            background-image: url(../../../images/backgrounds/desk/background-desk-3-2x.jpg);
+        }
     }
 
-    @include retina {
-        background-image: url(../../../images/backgrounds/desk/background-desk-3-2x.jpg);
-    }
 }
 .slick-btn-wrap{
     display: none;

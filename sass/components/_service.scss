@@ -10,12 +10,27 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../../img/services/services-mob-bacgrd.png.png);
+    background-image: url(../../images/service/service-bac-mob-1x.png);
 
-
-    @include retina{
-        background-image: url(../../img/services/services-mob-bacgrd-2x.png.png);
+    @include retina {
+        background-image: url(../../images/service/service-bac-mob-2x.png);
     }
+
+    @include tablet {
+        background-image: url(../../images/service/service-bac-tab-1x.png);
+        @include retina {
+            background-image: url(../../images/service/service-bac-tab-2x.png);
+        }
+    }
+
+
+    @include desktop {
+        background-image: url(../../images/service/service-bac-desk-1x.png);
+        @include retina {
+            background-image: url(../../images/service/service-bac-desk-2x.png);    
+        }
+    }
+
 }
 
 .service__uptitle {
