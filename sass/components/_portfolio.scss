@@ -64,7 +64,7 @@
     @include desktop{
         flex-basis: calc((100% - 90px) / 4);
         transition: scale(0);
-        &:hover{
+        &:hover, &:focus{
             transform: scale(1.5);
            
     }

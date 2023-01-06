@@ -1799,7 +1799,7 @@ address {
     -webkit-transition: scale(0);
     transition: scale(0);
   }
-  .portfolio__item:hover {
+  .portfolio__item:hover, .portfolio__item:focus {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
   }
