@@ -1796,6 +1796,12 @@ address {
   .portfolio__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
+    -webkit-transition: scale(0);
+    transition: scale(0);
+  }
+  .portfolio__item:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 

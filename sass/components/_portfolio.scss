@@ -63,7 +63,11 @@
     }
     @include desktop{
         flex-basis: calc((100% - 90px) / 4);
+        transition: scale(0);
+        &:hover{
+            transform: scale(1.5);
+           
     }
-}
 
-.portfolio__image {}
+    }}
+
