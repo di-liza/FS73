@@ -1201,7 +1201,7 @@ address {
   .about__descr {
     font-size: 18px;
     line-height: 1.6666666667;
-    width: 330px;
+    width: 345px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1232,6 +1232,7 @@ address {
 @media screen and (min-width: 1200px) {
   .about__text {
     width: 470px;
+    margin-bottom: 42px;
   }
 }
 
