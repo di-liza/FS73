@@ -417,8 +417,8 @@ address {
 
 .slide-2 {
   height: 610px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../../images/backgrounds/mob/background-mob-2-1x.jpg);
-  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../../images/backgrounds/mob/background-mob-2-1x.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/backgrounds/mob/background-mob-2-1x.jpg);
+  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/backgrounds/mob/background-mob-2-1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -456,8 +456,8 @@ address {
 
 .slide-3 {
   height: 610px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../../images/backgrounds/mob/background-mob-3-1x.jpg);
-  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../../images/backgrounds/mob/background-mob-3-1x.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/backgrounds/mob/background-mob-3-1x.jpg);
+  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/backgrounds/mob/background-mob-3-1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
