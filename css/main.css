@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-.social-link__link, .contact__link, .contact__adress, .mob-menu__soc-link, .mob-menu__tel, .mob-menu__link, .header__link, .tel__link, .socials__link, .logo {
+.social-link__link, .contact__link, .contact__adress, .mob-menu__soc-link, .mob-menu__tel, .mob-menu__link, .header__link, .header__phone-link, .socials__link, .logo {
   text-decoration: none;
   color: var(--primary-link-color);
 }
@@ -675,11 +675,11 @@ address {
   color: #FFFFFF;
 }
 
-.tel__link {
+.header__phone-link {
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
 }
-.tel__link:hover, .tel__link:focus {
+.header__phone-link:hover, .header__phone-link:focus {
   color: #FF6C00;
   -webkit-transform: transition;
           transform: transition;
@@ -1299,7 +1299,7 @@ address {
   }
 }
 
-.servise__content-wrap {
+.servise-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1971,7 +1971,7 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
-  .contact-from__wrap {
+  .contact-from-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -50,7 +50,7 @@
         color: #FFFFFF;
     }
 }
-.tel__link{
+.header__phone-link{
     @extend %link;
     transition: 250ms linear;
     &:hover,
