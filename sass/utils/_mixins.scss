@@ -15,12 +15,13 @@
         @content;
     }
 }
-@mixin push--auto() {
-    margin-left: auto;
-    margin-right: auto;
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
 }
-
-
 @mixin flex--center($type: flex, $js-con: center, $al-i: center) {
     display: $type;
     justify-content: $js-con;
@@ -30,35 +31,23 @@
 @mixin sectionSet($p-top: 84px, $p-bot: 84px) {
     padding-top: $p-top;
     padding-bottom: $p-bot;
-    // text-align: center;
 }
 
-
-@mixin retina {
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        @content;
+@mixin uptitile-before ($bg-color: currentColor, $width: 60px, $height: 1px){
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    &::before {
+        // position: absolute;
+        content: '';
+        width: $width;
+        height: $height;
+        display: block;
+        // top: 7px;
+        // left: $left;
+        background-color: $bg-color;
     }
 }
 
-// @mixin booking-btn ($w:160px, $h:40px, $color: ) {
-//     @extend %button;
 
-//     width: $w;
-//     height: $h;
-//     display: block;
 
-//     font-weight: 600;
-//     font-size: 12px;
-//     line-height: calc(16px / 12px);
-//     letter-spacing: 0.09em;
-//     text-transform: uppercase;
-
-//     color: $color;
-
-//     border: 1px solid var(--accent-color);
-//     border-radius: 25px;
-//     background-color: transparent;
-// }

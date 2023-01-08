@@ -14,23 +14,13 @@
     }
 }
 .choice__uptitle {
-    position: relative;
+    @include uptitile-before;
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15px / 11px);
     text-transform: uppercase;
     color: #303030;
-    padding-left: 80px;
     margin-bottom: 20px;
-    &::before{
-        position: absolute;
-        content: '';
-        width: 60px;
-        height: 1px;
-        background-color: #303030;
-        top: 7px;
-        left: 0;
-    }
 }
 
 .choice__title {

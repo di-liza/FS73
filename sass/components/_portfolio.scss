@@ -11,23 +11,13 @@
     @extend %visuality-hidden;
 }
 .portfolio__uptitle{
-    position: relative;
+    @include uptitile-before;
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15px / 11px);
     text-transform: uppercase;
     color: #303030;
-    padding-left: 80px;
     margin-bottom: 71px;
-    &::before{
-        position: absolute;
-        content: '';
-        width: 60px;
-        height: 1px;
-        top: 7px;
-        left: 0;
-        background-color: #303030;
-    }
     @include tablet{
         margin-bottom: 44px;
     }
@@ -44,7 +34,6 @@
         gap: 30px;
         flex-wrap: wrap;
         align-items: baseline;
-       
     }
     @include desktop {
         width: 1170px;
@@ -66,8 +55,7 @@
         transition: scale(0);
         &:hover, &:focus{
             transform: scale(1.5);
-           
+            
     }
-
-    }}
+}}
 

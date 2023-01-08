@@ -108,23 +108,13 @@
     margin-right: 16px;
 }
 .contact__subtitle {
-    position: relative;
+    @include uptitile-before ($bg-color:rgba(157, 164, 189, 0.4));
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15px / 11px);
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-left: 80px;
     margin-bottom: 20px;
-    &::before{
-        position: absolute;
-        width: 60px;
-        height: 1px;
-        content: '';
-        top: 7px;
-        left: 0;
-        background-color: rgba(157, 164, 189, 0.4);
-    }
 }
 
 .contact__date-time {

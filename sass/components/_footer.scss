@@ -2,40 +2,22 @@
     @include sectionSet($p-top: 44px, $p-bot: 44px);
     background-color: #F7F7F7;
 
-    .social-link {
-    flex-wrap: nowrap;
-    gap: 40px;
-    margin-left: auto;
-    font-size: 11px;
-    line-height: calc(15px / 11px);
-    padding-left: 100px;
-
-    &:nth-child(1)::before {
-        width: 60px;
-        height: 1px;
-        left: -104px;
-        top: 7px;
-
-        @include mobile{
-        left: 0px;
-        }
-    }
-}}
+   }
 .footer__wrap{
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
-    width: 119px;
+    width: 288px;
     @include mobile{
-        width: 280px;
+        width: 418px;
         justify-content: space-between;
     }
     @include tablet{
-        width: 521px;
+        width: 690px;
         flex-direction: unset;
     }
     @include desktop{
-        width: 1000px;
+        width: 1170px;
     }
 }
 .footer__copy {

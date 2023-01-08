@@ -43,3 +43,14 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+// %uptitle-before{
+//     &::before {
+//         position: absolute;
+//         content: '';
+//         width: 60px;
+//         height: 1px;
+//         top: 7px;
+//         left: 0;
+//         background-color: currentColor;
+//     }
+// }
