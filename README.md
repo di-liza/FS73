@@ -2,6 +2,9 @@
 
 Welcome to the GitHub repository for "Barbershop," a barbershop's online presence. This repository contains the source code for the barbershop's website, where clients can explore services, schedule appointments, and learn more about our team and work process.
 
+![image](https://github.com/di-liza/barbershop/assets/114363326/d8fa52e6-a869-42ba-80e1-70cb34a83bb8)
+
+
 ## Features
 
 1. **Responsive Design**: Our website is designed to be responsive, ensuring it looks great and functions flawlessly on various devices and screen sizes.
